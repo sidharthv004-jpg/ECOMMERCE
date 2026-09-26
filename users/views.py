@@ -63,3 +63,4 @@ class TestProtectedView(APIView):
 
     def get(self,request):
         return Response({"message":"you are authenticated"})
+    

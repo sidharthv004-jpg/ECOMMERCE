@@ -1,4 +1,17 @@
 $kind: http-request
-url: http://127.0.0.1:8000/api/users/test/
+url: http://127.0.0.1:8000/api/users/login/
 method: GET
+body:
+  type: json
+  content: "{\r
+
+    \    \"username\": \"merchant1\",\r
+
+    \    \"password\": \"123\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{json_web_token_0m0v}}"
 order: 2745398826334058
